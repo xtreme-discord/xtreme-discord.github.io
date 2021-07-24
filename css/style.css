@@ -1,0 +1,362 @@
+/* resetting browser stuff */
+*     {
+  box-sizing: border-box;
+}
+html,
+body   {
+  background-color: #1C1C24;
+  margin: 0;
+  scroll-behavior: smooth;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* styling our overall page */
+body     {
+  background: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* styling our header */
+header   {
+  background: #1C1C24;
+  color: #FFF;
+  padding: 20px 30px;
+}
+
+/* logo */
+#logo         {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  width: 49%;
+}
+#logo img    {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#logo span   {
+  display: inline-block;
+}
+
+/* main navigation */
+nav     {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+nav ul   {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a    {
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: 0.3s ease all;
+}
+nav ul li a:hover   {
+  background: rgb(248, 101, 101);
+}
+
+
+
+/* styling our footer */
+footer   {
+  background: #222;
+  color: #777;
+  padding: 10px;
+  text-align: center;
+}
+footer img   {
+  display: block;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto 10px;
+}
+
+.third {
+  border-color: rgb(245, 69, 69);
+  color: #fff;
+  box-shadow: 0 0 40px 40px rgb(245, 69, 69) inset, 0 0 0 0 rgb(245, 69, 69);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 rgb(245, 69, 69) inset, 0 0 10px 4px rgb(245, 69, 69);
+}
+/* styling our main content */
+.hero           {
+  min-height: 800px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  /*background-image: url('../img/bank.png');*/
+  background: #1C1C24;
+  background-size: cover;
+}
+.hero-content   {
+  color: #FFF;
+  padding-top: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.hero-content h1   {
+  font-size: 40px;
+  margin: 0;
+}
+.hero-content p    {
+  font-size: 20px;
+}
+
+.btn{
+  background-color: rgb(245, 69, 69);
+  border: none;
+}
+
+.btn :hover{
+  background-color: rgb(53, 0, 0);
+}
+
+
+.btn1    {
+  display: inline-block;
+  color: #FFF;
+  border-radius: 3px;
+  background-color: rgb(245, 69, 69);
+  padding: 15px 30px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.btn2    {
+  display: inline-block;
+  color: #FFF;
+  border-radius: 3px;
+  background-color: black;
+  padding: 15px 30px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+
+.btn1:hover{
+
+  animation: animate 2s ease-in-out;
+}
+
+
+@keyframes animate{
+  0%{
+    opacity: 1;
+  }
+  25%{
+    opacity: 1.5;
+  }
+  50%{
+    opacity: 2;
+  }
+  75%{
+    opacity: 1.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* basic site sections */
+.site-section   {
+  /*background-image: url('../img/b222.png');*/
+  background: #1C1C24;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.site-section-secondary   {
+  background: #EFEFEF;
+}
+.site-section-inside   {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-header h2  {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+
+/* feature boxes */
+.feature-box   {
+  display: inline-block;
+  width: 32%;
+  padding: 20px 30px;
+}
+
+.hero-title{
+  padding-top: 150px;
+}
+
+.feature-box  p {
+  color: white;
+}
+.feature-box img  {
+  margin-bottom: 12px;
+  width: 80px;
+}
+.feature-box h5   {
+  font-size: 20px;
+  color: rgb(255, 153, 153);
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* testimonial boxes */
+.testimonial-box   {
+  display: inline-block;
+  width: 32%;
+  padding: 20px 30px;
+}
+.testimonial-content   {
+  background: #FFF;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.testimonial-author           {
+
+}
+.testimonial-author img {
+  float: left;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.testimonial-author h5   {
+  font-size: 18px;
+  margin: 0;
+  padding-top:15px;
+}
+.testimonial-author span {
+  font-size: 14px;
+}
+
+
+/* responsive */
+/* mobile devices */
+@media screen and (max-width:768px) {
+  body   {
+    font-size: 14px;
+  }
+
+  .hero-title{
+    padding-top: 50px;
+  }
+
+  header{
+    padding: 0;
+  }
+
+  /* header responsive */
+  #logo   {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  nav     {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  nav a   {
+    font-size: 12px;
+  }
+
+  /* hero responsive */
+  .hero       {
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    margin-top: -24%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .hero-content   {
+    padding-top: 80px;
+  }
+  .hero-content h1     {
+    font-size: 30px;
+  }
+  .hero-content p      {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .btn1{
+    display: inline-block;
+    color: #FFF;
+    border-radius: 3px;
+    background-color: rgb(245, 69, 69);
+    padding: 15px 17px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .btn2{
+    display: inline-block;
+    color: #FFF;
+    margin-top: 30px;
+    border-radius: 3px;
+    background-color: black;
+    padding: 15px 30px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* site section responsive */
+  .site-section-inside {
+    width: 95%;
+  }
+  .section-header h2   {
+    font-size: 22px;
+  }
+
+  /* feature box responsive */
+  .feature-box   {
+    display: block;
+    width: 100%;
+  }
+
+  /* testimonial box responsive */
+  .testimonial-box   {
+    display: block;
+    width: 100%;
+  }
+}
