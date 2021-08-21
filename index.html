@@ -17,7 +17,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+<script>
+    
+    async function func(){
+        const api = "https://api.statcord.com/v3/784021298832998430"
+        let response = await fetch(api)
+        json_data = await response.json()
+        
+        document.getElementById("server").innerHTML = `${json_data.data[0].servers}`
+        document.getElementById("users").innerHTML = `${json_data.data[0].users}`
+        console.log(json_data.data[0].servers)
+    }
 
+    
+    
+    func()
+</script>
 <body style="background-color: var(--background);">
     <div id="top" style="height: 12px;">
         <nav class="navbar navbar-light navbar-expand fixed-top" style="color: var(--main-color);border-top-width: 6px;border-top-style: solid;background: var(--background);">
@@ -99,12 +114,12 @@
             <div class="container-fluid text-white">
                 <div class="row row-cols-3 justify-content-center" style="color: var(--secondary-text-color);">
                     <div class="col-auto col-md-6 col-lg-4 text-center pb-5 pt-5 number-item love_counter">
-                        <h1 class="love_count" style="font-size: 70px;"><strong>184</strong></h1>
+                        <h1 class="love_count" style="font-size: 70px;" id="server"></strong></h1>
                         
-                        <h4 style="color: var(--main-color);margin-top: -6px;"><i class="fa fa-bar-chart" style="padding-right: 10px; color: white;"></i>Total Servers</h4>
+                        <h4 style="color: var(--main-color);margin-top: -6px;" ><i class="fa fa-bar-chart" style="padding-right: 10px; color: white;"></i>Total Servers</h4>
                     </div>
                     <div class="col-auto col-lg-4 text-center align-self-center pb-5 pt-5 love_counter">
-                        <h1 class="love_count" style="font-size: 70px;"><strong>318080</strong></h1>
+                        <h1 class="love_count" style="font-size: 70px;" id="users"><strong></strong></h1>
                         <h4 style="color: var(--main-color);margin-top: -6px;"><i class="fa fa-user" style="padding-right: 10px; color: white;"></i>Total Users</h4>
                     </div>
                 </div>
