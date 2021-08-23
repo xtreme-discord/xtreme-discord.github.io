@@ -10,15 +10,15 @@
 /* scroll bar */
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: black;
+    background: #23272A;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--main-color);
+    background: #2C2F33;
 }
 
 .footer-dark {
