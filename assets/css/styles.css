@@ -137,8 +137,7 @@ html{
 }
 
 .f-div{
-    height: 50vh;
-    margin-top:10vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,14 +201,12 @@ html{
 
     .f-div{
         display: block;
-        width:80vh;
-        margin-top:5vh;
+    
     }
 
     .f-div-last{
         display: block;
-        width:80vh;
-        margin-top:5vh;
+     
     }
 }
 
