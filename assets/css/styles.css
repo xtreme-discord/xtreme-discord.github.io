@@ -1,10 +1,47 @@
 :root {
     --main-color: #f02d2d;
-    --background: #23272A;
-    --secondary: #2C2F33;
+    --hover-main-color: #ec2323;
+    --background: #272934;
+    --dark-background: #20222c;
+    --secondary: #272934;
+    --light-bg : #3d3f49;
     --link: #f54254;
     --text-color: #fff;
     --secondary-text-color: #dcdcdc;
+    --animate__infinite	: infinite;
+}
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    padding: 0;
+}
+
+
+html{
+    background-color: #272934;
+}
+
+
+.navbar{
+    background-color: var(--background);
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+
+.nav-item {
+    margin: 0 1rem !important;
+}
+
+
+.invite-button{
+    animation: bounce;
+    --animate-repeat : 2;
 }
 
 /* scroll bar */
@@ -20,6 +57,22 @@
 ::-webkit-scrollbar-thumb {
     background: #2C2F33;
 }
+
+/*/*/
+
+.main-content{
+    height: 100vh  !important;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.btns{
+    display: flex;
+}
+
 
 .footer-dark {
     padding: 50px 0;
@@ -57,6 +110,58 @@
 }
 
 /* features */
+.half-width {
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+
+.half-width img{
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.half-width img:hover{
+    box-shadow: 4px 7px 40px var(--dark-background);
+}
+
+.half-width h1{
+    font-size: 2rem;
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+}
+
+.f-div{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-div-last{
+    margin-top: 10vh;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-box{
+    display: flex;
+}
+
+
+.features-box .one{
+    flex: 50%;
+}
+.features-box .two{
+    flex: 50%;
+}
 
 .features-boxed {
     color: #313437;
@@ -80,7 +185,32 @@
         padding-top: 25px;
         font-size: 24px;
     }
+    .features{
+        flex-direction: column;
+        height: 100%;
+    }
+    .half-width{
+        width: 100%;
+        margin-left:0;
+        padding: 10px;
+    }
+
+    .half-width h1{
+        font-size: 1.7rem;
+    }
+
+    .f-div{
+        display: block;
+    }
+
+    .f-div-last{
+        display: block;
+    }
 }
+
+
+
+
 
 .features-boxed .intro {
     font-size: 16px;
@@ -265,8 +395,14 @@ div#features {
     background: var(--background);
 }
 
-div#features:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+.stats{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: var(--dark-background);
+    width: 100%;
+    padding: 50px;
 }
 
 .partner:hover {
@@ -285,4 +421,37 @@ div#features:hover {
 .yeet {
     text-align: center;
     padding: 18px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .nav a{display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+      font-size: 30px;
+      color: var(--text-color);
+    }
+    .nav{
+        margin-left: 15px ;
+        margin-right: 15px ;
+    }
+    .new-nav {
+      flex-direction: column;
+    }
+    .new-nav ul {
+      flex-direction: column;
+      padding-top: 0.5rem;
+    }
+    .new-nav li {
+      padding: 0.5rem 0;
+    }
+    .name{
+        font-size: 30px;
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+    }
 }
