@@ -121,6 +121,8 @@ html{
     width: 100%;
     transition: 0.5s;
     border-radius: 10px;
+    box-shadow: 4px 7px 40px var(--dark-background);
+
 }
 
 .half-width img:hover{
@@ -201,12 +203,10 @@ html{
 
     .f-div{
         display: block;
-    
     }
 
     .f-div-last{
         display: block;
-     
     }
 }
 
