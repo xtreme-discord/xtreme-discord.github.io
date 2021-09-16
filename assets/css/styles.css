@@ -24,7 +24,7 @@ html{
 
 
 .navbar{
-    background-color: var(--background);
+    background-color: #1f202b;
 }
 
 .navbar-brand {
@@ -32,12 +32,18 @@ html{
     font-weight: 600;
 }
 
-
-
-.nav-item {
-    margin: 0 1rem !important;
+.navbar-brand img{
+    width: 70px;
+    height: 70px;
 }
 
+
+.navbar-nav{
+    font-weight: 600;
+}
+.nav-item {
+    margin: 0 0.5rem !important;
+}
 
 .invite-button{
     animation: bounce;
@@ -109,14 +115,6 @@ html{
     padding-top: 24px;
 }
 
-
-.navbar-nav{
-    font-weight: 600;
-}
-.nav-item {
-    margin: 0 0.5rem !important;
-}
-
 /* features */
 .half-width {
     width: 40%;
@@ -151,7 +149,9 @@ html{
 }
 
 .f-div{
-    height: 80vh;
+    margin-top: 10vh;
+    height: 60vh;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,7 +159,7 @@ html{
 
 .f-div-last{
     margin-top: 10vh;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -469,3 +469,4 @@ div#features {
         flex-direction: column;
     }
 }
+
