@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="./assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 <script>
     
@@ -41,7 +44,7 @@
 <body style="background-color: var(--background);">
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="https://media.discordapp.net/attachments/872873148503195658/885014792987869214/unknown-3.png" width="50" height="50" alt=""> Xtreme<span style="color: red;">.</span></a>
+          <a class="navbar-brand" href="#"><img src="https://media.discordapp.net/attachments/872873148503195658/885014792987869214/unknown-3.png" alt="">Xtreme</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -87,28 +90,28 @@
     <div class="features-boxed" style="background: #272934;" id="featuress">
         <div class="container-fluid">
             <div class="row justify-content-center features">
-                <div class="f-div">
+                <div class="f-div" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="half-width">
                         <h1 style="color: white;"><i class="fa fa-gavel" style="color: var(--main-color); padding-right: 10px;"></i> Advanced Moderation</h1>
                         <p>Control your server with advanced moderation including banning, purging, kicking, locking channels and much more.</p>
                     </div>
                     <div class="half-width"><img src="https://cdn.discordapp.com/attachments/866926963410075648/885806374896930836/unknown.png" alt=""></div>
                 </div>
-                <div class="f-div">
+                <div class="f-div" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="half-width"><img src="https://cdn.discordapp.com/attachments/866926963410075648/885811653646614559/unknown.png" alt=""></div>
                     <div class="half-width">
                         <h1 style="color: white;"><i class="bi-pencil-fill" style="color: var(--main-color); padding-right: 10px;"></i> Customizable Welcomer</h1>
                         <p>Say "hi" to your new comers with customizable welcomer from many different variables to choose from.</p>
                     </div>
                 </div>
-                <div class="f-div">
+                <div class="f-div" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="half-width">
                         <h1 style="color: white;"><i class="bi-bank2" style="color: var(--main-color); padding-right: 10px;"></i> Awesome Economy</h1>
                         <p>Increase server engagement with an awesome Currency system with minerals to mine, pickaxes to upgrade, shinies to collect and much more.</p>
                     </div>
                     <div class="half-width"><img src="https://cdn.discordapp.com/attachments/866926963410075648/885814077484593162/unknown.png" alt=""></div>
                 </div>
-                <div class="f-div-last">
+                <div class="f-div-last" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="half-width"><img src="https://cdn.discordapp.com/attachments/866926963410075648/886320526115606598/unknown.png" alt=""></div>
                     <div class="half-width">
                         <h1 style="color: white;"><i class="bi-dice-5-fill" style="color: var(--main-color); padding-right: 10px;"></i> Games</h1>
@@ -134,5 +137,11 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<script>
+    AOS.init({
+        once:true
+    });
+</script>
 </html>
