@@ -109,6 +109,14 @@ html{
     padding-top: 24px;
 }
 
+
+.navbar-nav{
+    font-weight: 600;
+}
+.nav-item {
+    margin: 0 0.5rem !important;
+}
+
 /* features */
 .half-width {
     width: 40%;
