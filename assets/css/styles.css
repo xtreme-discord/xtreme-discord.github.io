@@ -149,8 +149,8 @@ html{
 }
 
 .f-div{
-    margin-top: 10vh;
-    height: 60vh;
+    /*margin-top: 10vh;*/
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
