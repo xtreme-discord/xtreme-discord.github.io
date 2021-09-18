@@ -37,6 +37,10 @@ html{
     height: 70px;
 }
 
+.navbar-brand li{
+    color: white;
+}
+
 
 .navbar-nav{
     font-weight: 600;
@@ -149,21 +153,12 @@ html{
 }
 
 .f-div{
-    /*margin-top: 10vh;*/
-    height: 100vh;
-    position: relative;
+    margin: 20vh 0vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.f-div-last{
-    margin-top: 10vh;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .features-box{
     display: flex;
@@ -193,7 +188,7 @@ html{
     color: inherit;
 }
 
-@media (max-width:867px) {
+@media (max-width:767px) {
     .features-boxed h2 {
         margin-bottom: 25px;
         padding-top: 25px;
@@ -215,11 +210,7 @@ html{
 
     .f-div{
         display: block;
-        margin-top:10vh;
-    }
-
-    .f-div-last{
-        display: block;
+        margin-top: 5vh;
     }
 }
 
@@ -304,103 +295,55 @@ a {
     color: var(--secondary-text-color);
 }
 
-.accordion .accordion-item {
-    border-bottom: 1px solid var(--text-color);
+.card-color{
+    background: #1f202b;
+    color: white;
 }
 
-.accordion .accordion-item button[aria-expanded='true'] {
-    border-bottom: 1px solid var(--link);
+
+.card{
+    margin:5vh ;
+
 }
 
-.accordion button {
-    position: relative;
-    display: block;
-    text-align: left;
+.card button{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.card button{
     width: 100%;
-    padding: 1em 0;
-    color: var(--text-color);
-    font-size: 1.15rem;
-    font-weight: 400;
+
+    padding: 0;
+}
+
+
+.card button{
+    text-align: left;
     border: none;
-    background: none;
-    outline: none;
+    background-color: #1f202b;
 }
 
-.accordion button:hover,
-.accordion button:focus {
-    cursor: pointer;
-    color: var(--link);
+.code-block{
+    padding: 5px;
+    background:#474350;
+    border-radius: 5px;
+}
+.card button i{
+    font-size: 1.3rem;
+    margin-right: 10px;
 }
 
-.accordion button:hover::after,
-.accordion button:focus::after {
-    cursor: pointer;
-    color: var(--link);
-    border-right: 1px solid var(--link);
+.card-color button{
+    color: white;
 }
 
-.accordion button .accordion-title {
-    padding: 1em 1.5em 1em 0;
+.card-color button:hover{
+    color: white;
 }
 
-.accordion button .icon {
-    display: inline-block;
-    position: absolute;
-    top: 18px;
-    right: 0;
-    width: 22px;
-    height: 22px;
-}
-
-.accordion button .icon::before {
-    display: block;
-    position: absolute;
-    content: '';
-    top: 9px;
-    left: 5px;
-    width: 10px;
-    height: 2px;
-    background: currentColor;
-}
-
-.accordion button .icon::after {
-    display: block;
-    position: absolute;
-    content: '';
-    top: 5px;
-    left: 9px;
-    width: 2px;
-    height: 10px;
-    background: currentColor;
-}
-
-.accordion button[aria-expanded='true'] {
-    color: var(--link);
-}
-
-.accordion button[aria-expanded='true'] .icon::after {
-    width: 0;
-}
-
-.accordion button[aria-expanded='true']+.accordion-content {
-    opacity: 1;
-    max-height: 250em;
-    transition: all 200ms linear;
-    will-change: opacity, max-height;
-}
-
-.accordion .accordion-content {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 200ms linear, max-height 200ms linear;
-    will-change: opacity, max-height;
-}
-
-.accordion .accordion-content p {
-    font-size: 1rem;
-    font-weight: 300;
-    margin: 2em 0;
+.card-color h5{
+    color: white;
 }
 
 div#features {
