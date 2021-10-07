@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home • Xtreme</title>
+    <title>Xtreme - A Discord Bot.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="description" content="A multi-purpose Discord bot with Image Manipulation, Economy game, cool Utilities, super Fun, Roasting and many more">
     <meta name="theme-color" content="#f54254">
-    <link rel="icon" type="image/png" sizes="300x250" href="https://media.discordapp.net/attachments/872873148503195658/885014792987869214/unknown-3.png">
+    <link rel="icon" type="image/png" sizes="300x250" href="https://firebasestorage.googleapis.com/v0/b/gallery-4a75f.appspot.com/o/images%2FHEDKi61MqMahjAk9eraRzpmiaMv2%2F334841c21c02ea7ed6c0dcd85ed0046b.png?alt=media&token=91266055-4c4e-4196-a92d-db3ea714434f">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -29,6 +29,7 @@
         
         document.getElementById("servers").innerHTML = `${json_data.data[0].servers}`
         document.getElementById("users").innerHTML = `${json_data.data[0].users}`
+        document.getElementById("users").innerHTML = `${json_data.data[0].users}`
         console.log(json_data.data[0].servers)
 
     }
@@ -42,9 +43,10 @@
     }
 </script>
 <body style="background-color: var(--background);">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <!--<marquee behavior="" direction="left" class="news"><i class="fa fa-cog" style='padding-right: 10px;'></i>Slash commands are coming soon..</marquee>-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="https://media.discordapp.net/attachments/872873148503195658/885014792987869214/unknown-3.png" alt="">Xtreme</a>
+          <a class="navbar-brand" href=""><img src="https://images.discordapp.net/avatars/784021298832998430/334841c21c02ea7ed6c0dcd85ed0046b.png?size=128" alt="">Xtreme</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -52,7 +54,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="https://discord.com/oauth2/authorize?client_id=784021298832998430&permissions=4294442359&scope=applications.commands%20bot">Invite</a>
+                <a class="nav-link"  href="https://discord.com/oauth2/authorize?client_id=784021298832998430&permissions=4294442359&scope=applications.commands%20bot">Invite</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://top.gg/bot/784021298832998430/vote">Vote</a>
@@ -74,7 +76,7 @@
           </div>
     </nav>
     <header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center main-content">
-        <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">Make your Discord Server active!</h1>
+        <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);     font-family: 'Poppins', sans-serif; font-size: 2rem;">Make you discord server active ;)</h1>
         <p style="color: var(--secondary-text-color);">Configure moderation, economy, fun and much more with the best themed bot on Discord.</p>
         <div class="btns">
             <a href="https://discord.com/oauth2/authorize?client_id=784021298832998430&permissions=4294442359&scope=applications.commands%20bot" id="invite" class="btn btn-primary shadow-none" type="button" style="padding: 15px; margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 5px;"><i class="bi-discord"></i> Add to Discord</a>
@@ -82,43 +84,57 @@
         </div>
         
     </header>
-    <div class="stats">
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#4e5d94" class="bi bi-discord" viewBox="0 0 16 16">
-            <path d="M6.552 6.712c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z"/>
-            <path d="M13.36 0H2.64C1.736 0 1 .736 1 1.648v10.816c0 .912.736 1.648 1.64 1.648h9.072l-.424-1.48 1.024.952.968.896L15 16V1.648C15 .736 14.264 0 13.36 0zm-3.088 10.448s-.288-.344-.528-.648c1.048-.296 1.448-.952 1.448-.952-.328.216-.64.368-.92.472-.4.168-.784.28-1.16.344a5.604 5.604 0 0 1-2.072-.008 6.716 6.716 0 0 1-1.176-.344 4.688 4.688 0 0 1-.584-.272c-.024-.016-.048-.024-.072-.04-.016-.008-.024-.016-.032-.024-.144-.08-.224-.136-.224-.136s.384.64 1.4.944c-.24.304-.536.664-.536.664-1.768-.056-2.44-1.216-2.44-1.216 0-2.576 1.152-4.664 1.152-4.664 1.152-.864 2.248-.84 2.248-.84l.08.096c-1.44.416-2.104 1.048-2.104 1.048s.176-.096.472-.232c.856-.376 1.536-.48 1.816-.504.048-.008.088-.016.136-.016a6.521 6.521 0 0 1 4.024.752s-.632-.6-1.992-1.016l.112-.128s1.096-.024 2.248.84c0 0 1.152 2.088 1.152 4.664 0 0-.68 1.16-2.448 1.216z"/>
-          </svg>
-           Serving over <span id="servers"></span> server and <span id="users"></span> users.
-    </div>
     <section id="features">
-    <div class="features-boxed" style="background: #272934;" id="featuress">
+    <div class="features-boxed" style="background: #20222c;" id="featuress">
         <div class="container-fluid">
             <div class="row justify-content-center features">
-                <div class="f-div" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="f-div" data-aos="zoom-in" data-aos-duration="900">
                     <div class="half-width">
                         <h1 style="color: white;"><i class="fa fa-gavel" style="color: var(--main-color); padding-right: 10px;"></i> Advanced Moderation</h1>
+                        <div class="line"></div>
                         <p>Control your server with advanced moderation including banning, purging, kicking, locking channels and much more.</p>
+                        <div class="f-but">
+                            <a class="read-more">Learn more<i class="fa fa-arrow-right " style="padding-left: 5px;"></i></a>
+                            <a href="https://discord.com/oauth2/authorize?client_id=784021298832998430&scope=applications.commands%20bot&permissions=2080894207" class="try-now">Try now <i class="fa fa-plus " style="padding-left: 5px;"></i></a>
+                        </div>
                     </div>
                     <div class="half-width"><img src="https://cdn.discordapp.com/attachments/866926963410075648/885806374896930836/unknown.png" alt=""></div>
                 </div>
-                <div class="f-div" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="f-div" data-aos="zoom-in" data-aos-duration="900">
                     <div class="half-width"><img src="https://cdn.discordapp.com/attachments/866926963410075648/885811653646614559/unknown.png" alt=""></div>
                     <div class="half-width">
                         <h1 style="color: white;"><i class="bi-pencil-fill" style="color: var(--main-color); padding-right: 10px;"></i> Customizable Welcomer</h1>
+                        <div class="line"></div>
                         <p>Say "hi" to your new comers with customizable welcomer from many different variables to choose from.</p>
+                        <div class="f-but">
+                            <button class="read-more">Learn more <i class="fa fa-arrow-right " style="padding-left: 5px;"></i></button>
+                            <a href="https://discord.com/oauth2/authorize?client_id=784021298832998430&scope=applications.commands%20bot&permissions=2080894207" class="try-now">Try now <i class="fa fa-plus " style="padding-left: 5px;"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="f-div" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="f-div" data-aos="zoom-in" data-aos-duration="900">
                     <div class="half-width">
                         <h1 style="color: white;"><i class="bi-bank2" style="color: var(--main-color); padding-right: 10px;"></i> Awesome Economy</h1>
+                        <div class="line"></div>
                         <p>Increase server engagement with an awesome Currency system with minerals to mine, pickaxes to upgrade, shinies to collect and much more.</p>
+                        <div class="f-but">
+                            <button class="read-more">Learn more <i class="fa fa-arrow-right " style="padding-left: 5px;"></i></button>
+                            <a href="https://discord.com/oauth2/authorize?client_id=784021298832998430&scope=applications.commands%20bot&permissions=2080894207" class="try-now">Try now <i class="fa fa-plus " style="padding-left: 5px;"></i></a>
+                        </div>
                     </div>
                     <div class="half-width"><img src="https://cdn.discordapp.com/attachments/866926963410075648/885814077484593162/unknown.png" alt=""></div>
                 </div>
-                <div class="f-div" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="f-div" data-aos="zoom-in" data-aos-duration="900">
                     <div class="half-width"><img src="https://cdn.discordapp.com/attachments/866926963410075648/886320526115606598/unknown.png" alt=""></div>
                     <div class="half-width">
                         <h1 style="color: white;"><i class="bi-dice-5-fill" style="color: var(--main-color); padding-right: 10px;"></i> Games</h1>
+                        <div class="line"></div>
+                        
                         <p>Play games like truth or dare, tic-tac-toe and more with your server members.</p>
+                        <div class="f-but">
+                            <button class="read-more">Learn more <i class="fa fa-arrow-right " style="padding-left: 5px;"></i></button>
+                            <a href="https://discord.com/oauth2/authorize?client_id=784021298832998430&scope=applications.commands%20bot&permissions=2080894207" class="try-now">Try now <i class="fa fa-plus " style="padding-left: 5px;"></i></a>
+                        </div>
                     </div>
                 </div>
                 </div>
@@ -126,8 +142,7 @@
         </div>
     </div>
     </section>
-
-    <div class="footer-dark" style="background: #272934;padding-top: 0px;padding-bottom: 0px;">
+    <div class="footer-dark" style="background: #20222c;padding-top: 0px;padding-bottom: 0px;">
         <div class="container">
             <div class="row">
                 <div class="col item social"><a class="smoothScroll" href="#top"><i class="fa fa-arrow-up"></i></a></div>
