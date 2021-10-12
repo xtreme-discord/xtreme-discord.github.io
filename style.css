@@ -15,6 +15,7 @@
 
 *{
     margin: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
     padding: 0;
 }
@@ -44,10 +45,14 @@ html{
 
 .navbar-brand img{
     width: 50px;
+    transition: 0.5s;
     height: 50px;
     margin-right: 10px;
+    box-shadow: 2px 2px 100px var(--main-color);
+
     border-radius: 50%;
 }
+
 
 .navbar-brand li{
     color: white;
@@ -268,29 +273,7 @@ a{
 }
 
 @media (max-width:767px) {
-    .features-boxed h2 {
-        margin-bottom: 25px;
-        padding-top: 25px;
-        font-size: 24px;
-    }
-    .features{
-        flex-direction: column;
-        height: 100%;
-    }
-    .half-width{
-        width: 100%;
-        margin-left:0;
-        padding: 10px;
-    }
-
-    .half-width h1{
-        font-size: 1.7rem;
-    }
-
-    .f-div{
-        display: block;
-        margin-top: 5vh;
-    }
+    
 }
 
 
@@ -441,15 +424,34 @@ div#features {
 }
 
 .stats{
-    text-align: center;
     color: white;
     font-size: 1.5rem;
     font-weight: 600;
-    border-radius: 10px;
-    background-color: var(--dark-background);
-    width: 50%;
-    box-shadow: 4px 7px 40px #1f202b;
+    background-color: #12121a;
+    width: 100%;
+    text-align: center;
     padding: 50px;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    flex: 20%;
+}
+
+.server-card{
+    width: 10%;
+    transition: 0.5s;
+    margin: 10px 20px;
+    border-radius: 50px;
+
+}
+
+
+
+.server-card:hover{
+    
+    transform: scale(1.1);
 }
 
 .partner:hover {
@@ -472,7 +474,7 @@ div#features {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .nav a{display: none;}
     .nav a.icon {
       float: right;
@@ -520,6 +522,17 @@ div#features {
     }
     .half-width img{
         display: none;
+    }
+}
+
+@media only screen and (max-width:600px){
+    
+    .grid{
+        flex-direction: column;
+        align-items: center;
+    }
+    .server-card{
+        width: 50%;
     }
 }
 
