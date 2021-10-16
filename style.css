@@ -28,8 +28,13 @@ html{
 
 .navbar{
     background-color:var(--secondary);
-    box-shadow: 4px 7px 40px #0c0d11;
+    width: 90%;
+    margin: 0px 5%;
 }
+
+
+navbar-nav
+
 
 .news{
     background-color: #7087d8;
@@ -55,11 +60,16 @@ html{
 
 
 .navbar-brand li{
-    color: white;
+    color: yellow;
+    font-weight: 100;
 }
 
 
+
+
 .navbar-nav{
+    font-size: 1.1rem;
+    font-family: sans-serif;
     font-weight: 600;
 }
 .nav-item {
@@ -74,15 +84,16 @@ html{
 /* scroll bar */
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #23272A;
+    background: #313437;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #2C2F33;
+    background: white;
+    border-radius: 10px;
 }
 
 /*/*/
@@ -90,10 +101,21 @@ html{
 .main-content{
     height: 100vh  !important;
     width: 100%;
-    text-align: center;
     justify-content: center;
     display: flex;
     align-items: center;
+    align-content: center;
+}
+
+
+
+.main-content h1{
+    font-size: 2.5rem;
+}
+
+
+.main-image{
+    align-self: right !important;
 }
 
 .line{
@@ -277,7 +299,34 @@ a{
 }
 
 
+.navbar-toggler{
+    outline: none;
+    border: none;
+    font-weight: 600;
+}
 
+.bar1{
+    border-top: 4px white solid;
+    border-radius: 10px;
+    width: 30px;
+}
+.bar2{
+    margin-top: 5px;
+    border-top: 4px white solid;
+    border-radius: 10px;
+    width: 20px;
+}
+.bar3{
+    margin-top: 5px;
+    border-radius: 10px;
+    border-top: 4px white solid;
+    width: 10px;
+}
+
+.navbar-toggler:hover{
+    outline: none;
+    border: none;
+}
 
 
 .features-boxed .intro {
@@ -427,6 +476,7 @@ div#features {
     color: white;
     font-size: 1.5rem;
     font-weight: 600;
+    overflow-x: hidden;
     background-color: #12121a;
     width: 100%;
     text-align: center;
@@ -440,17 +490,19 @@ div#features {
 }
 
 .server-card{
+    margin: 10px 20px;
     width: 10%;
     transition: 0.5s;
-    margin: 10px 20px;
-    border-radius: 50px;
+    border-radius: 50%;
 
 }
 
 
 
+
+
 .server-card:hover{
-    
+    box-shadow: 4px 7px 40px #0c0d11;
     transform: scale(1.1);
 }
 
@@ -475,6 +527,10 @@ div#features {
 
 
 @media only screen and (max-width: 900px) {
+    .navbar{
+        width: 100%;
+        margin: 0;
+    }
     .nav a{display: none;}
     .nav a.icon {
       float: right;
@@ -522,6 +578,35 @@ div#features {
     }
     .half-width img{
         display: none;
+    }
+    .main-content {
+        text-align: center;
+    }
+}
+
+@media (max-width:767px) {
+    .features-boxed h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+    .features{
+        flex-direction: column;
+        height: 100%;
+    }
+    .half-width{
+        width: 100%;
+        margin-left:0;
+        padding: 10px;
+    }
+
+    .half-width h1{
+        font-size: 1.7rem;
+    }
+
+    .f-div{
+        display: block;
+        margin-top: 5vh;
     }
 }
 
