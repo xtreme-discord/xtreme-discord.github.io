@@ -5,6 +5,7 @@
     --hover-main-color: #ec2323;
     --background: #20222c;
     --dark-background: #20222c;
+    --new-color : #141421;
     --secondary: #20222c;
     --light-bg : #3d3f49;
     --link: #f54254;
@@ -21,20 +22,49 @@
 }
 
 
-html{
-    background-color: #20222c;
+html, body{
+    background-color: #141421;
 }
 
 
 .navbar{
-    background-color:var(--secondary);
+    background-color:#141421;
     width: 90%;
+    padding: 20px;
     margin: 0px 5%;
 }
 
 
-navbar-nav
+.login-btn{
+    padding: 10px 30px;
+    
+    width: 32%;
+    font-weight: lighter;
+    color: white;
+    outline: none;
+    border-radius: 40px;
+    text-align: center;
+    border: none;
+    background-color: var(--main-color);
+}
 
+.login-btn:hover{
+    color: white;
+}
+
+
+.fa-angle-down{
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.login-av{
+    float: left;
+    width: 12%;
+    border-radius: 50%;
+    margin-right: 6px;
+}
 
 .news{
     background-color: #7087d8;
@@ -45,6 +75,7 @@ navbar-nav
 
 .navbar-brand {
     font-size: 1.7rem;
+    
     font-weight: 600;
 }
 
@@ -102,6 +133,10 @@ navbar-nav
     height: 100vh  !important;
     width: 100%;
     justify-content: center;
+    /*background-color: #1c1c2f;*/
+    background: url(https://cdn.discordapp.com/attachments/866926963410075648/901137888056586240/unknown.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     align-content: center;
@@ -110,7 +145,15 @@ navbar-nav
 
 
 .main-content h1{
-    font-size: 2.5rem;
+    font-size: 5rem;
+    color: white;
+}
+
+.main-content p{
+    width: 35%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: grey;
 }
 
 
@@ -133,21 +176,21 @@ navbar-nav
     margin-top: 30px;
 }
 
+
 .read-more{
     text-align: center;
     padding: 10px;
-    width: 30%;
+    width: 40%;
     border: none;
     cursor: pointer;
     margin-right: 50px;
-    background-color: #20222c;
+    background-color: rgb(34, 34, 41);
     outline: none;
     color: white;
     background-color: none;
     font-weight: 600;
     transition: 0.5s;
-    border: 2px solid #FFD700;
-    border-radius: 10px;
+    border-radius: 7px;
 
 }
 
@@ -156,16 +199,15 @@ a{
 }
 
 .read-more:hover{
-    background-color: #FFD700;
-    color: black;
+    box-shadow: 4px 4px 40px #181a1b;
+    color: white;
 
 }
 
 .try-now{
     padding: 10px;
-    width: 30%;
+    width: 20%;
     text-align: center;
-    border-radius: 10px;
     border: none;
     background-color: #20222c;
     outline: none;
@@ -216,6 +258,9 @@ a{
     opacity: 0.75;
 }
 
+
+
+
 .footer-dark .item.social>a:hover {
     background-color: #474350;
 }
@@ -237,13 +282,11 @@ a{
     width: 100%;
     transition: 0.5s;
     border-radius: 10px;
-    box-shadow: 4px 7px 40px var(--dark-background);
+    background-color: #141421;
 
 }
 
-.half-width img:hover{
-    box-shadow: 4px 7px 40px var(--dark-background);
-}
+
 
 .half-width h1{
     font-size: 2rem;
@@ -403,7 +446,7 @@ a {
 .container {
     margin: 0 auto;
     padding: 4rem;
-    color: var(--secondary-text-color);
+    color: #141421;
 }
 
 .card-color{
@@ -461,7 +504,7 @@ div#features {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     border-radius: 25px;
-    background: var(--background);
+    background: #141421;
 }
 
 
@@ -581,6 +624,18 @@ div#features {
     }
     .main-content {
         text-align: center;
+        background: #1c1c2f;
+    }
+    .main-content h1{
+        font-size: 2rem;
+    }
+
+    .main-content p{
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    .navbar{
+        padding: 10px;
     }
 }
 
@@ -607,6 +662,9 @@ div#features {
     .f-div{
         display: block;
         margin-top: 5vh;
+    }
+    .login-btn{
+        width: 80%;
     }
 }
 
