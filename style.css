@@ -302,7 +302,7 @@ a{
 }
 
 .f-div{
-    margin: 15vh 0vh;
+    margin: 10vh 0vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -511,16 +511,21 @@ div#features {
 .stats-sec{
     display: flex;
     margin-top: 10%;
+    padding: 50px 10px;
     align-items: center;
     justify-content: center;
+    background-color: #111827;
+
 }
 
 .stats{
     color: white;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
     overflow-x: hidden;
-    background-color: #12121a;
+    background:url(https://raw.githubusercontent.com/Xenon-Bot/website/859d77bac0cf69f35f705c30611a7f8212b1d6b2/public/meteor-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     text-align: center;
     padding: 50px;
@@ -636,6 +641,10 @@ div#features {
     }
     .navbar{
         padding: 10px;
+    }
+    .stats p{
+        font-size: 1.5rem;
+        width: 100%;
     }
 }
 
