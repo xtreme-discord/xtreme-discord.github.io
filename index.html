@@ -27,14 +27,14 @@
         let response = await fetch(api)
         json_data = await response.json()
         
-        document.getElementById("servers").innerHTML = `${json_data.data[0].servers}`
+        document.getElementById("serv ers").innerHTML = `${json_data.data[0].servers}`
         document.getElementById("users").innerHTML = `${json_data.data[0].users}`
         document.getElementById("users").innerHTML = `${json_data.data[0].users}`
         console.log(json_data.data[0].servers)
 
     }
 
-    
+     
     
     func()
 
