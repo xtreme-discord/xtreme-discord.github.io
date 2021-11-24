@@ -27,14 +27,14 @@
         let response = await fetch(api)
         json_data = await response.json()
         
-        document.getElementById("serv ers").innerHTML = `${json_data.data[0].servers}`
+        document.getElementById("servers").innerHTML = `${json_data.data[0].servers}`
         document.getElementById("users").innerHTML = `${json_data.data[0].users}`
         document.getElementById("users").innerHTML = `${json_data.data[0].users}`
         console.log(json_data.data[0].servers)
 
     }
 
-     
+    
     
     func()
 
@@ -56,9 +56,7 @@
         
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="https://discord.com/oauth2/authorize?client_id=784021298832998430&permissions=4294442359&scope=applications.commands%20bot">Invite</a>
-              </li>
+              
               <li class="nav-item">
                 <a class="nav-link" href="https://top.gg/bot/784021298832998430/vote">Vote</a>
               </li>
@@ -73,6 +71,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://donatebot.io/checkout/797725852681895936">Donate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://xtreme-discord.github.io/privacy-policy">Privacy policy</a>
               </li>
               <!--<li class="nav-item login-btn" id="login-li" style="padding-top: 10px;">
                 <a id="login" style="color: white;" href="https://discord.com/api/oauth2/authorize?client_id=886619489997848596&redirect_uri=http%3A%2F%2F127.0.0.1%3A5501%2Findex.html&response_type=code&scope=identify"><i class="bi bi-discord" style="padding-right: 10px;"></i> Login</a>
@@ -178,9 +179,6 @@
     </section>
     <div class="footer-dark" style="background: #141421;padding-top: 0px;padding-bottom: 0px;">
         <div class="container">
-            <div class="row">
-                <div class="col item social"><a class="smoothScroll" href="#top"><i class="fa fa-arrow-up"></i></a></div>
-            </div>
             <p class="copyright" style="color: var(--text-color);">Copyright © 2020 Xtreme - All Rights Reserved</p>
             <p class="copyright" style="color: var(--text-color);padding: 0px;">
             
