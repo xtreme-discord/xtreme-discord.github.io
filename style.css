@@ -89,14 +89,36 @@ html, body{
     border-radius: 50%;
 }
 
+.sec-wid {
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+
+.sec-wid img{
+    width: 50%;
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: #141421;
+
+}
+
+
 
 .navbar-brand li{
     color: yellow;
     font-weight: 100;
 }
 
+.navbar-brand li{
+    border: 5 black solid;
+}
 
 
+.custom :hover{
+    border-bottom: 5px white solid;
+}
 
 .navbar-nav{
     font-size: 1.1rem;
@@ -131,17 +153,17 @@ html, body{
 
 .main-content{
     height: 100vh  !important;
+    
     width: 100%;
-    justify-content: center;
     /*background-color: #1c1c2f;*/
     background: url(https://cdn.discordapp.com/attachments/866926963410075648/901137888056586240/unknown.png);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
     align-items: center;
-    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-
 
 
 .main-content h1{
@@ -150,8 +172,8 @@ html, body{
 }
 
 .main-content p{
-    width: 35%;
-    text-align: center;
+
+    width: 34%;
     font-size: 1.5rem;
     color: grey;
 }
@@ -201,7 +223,11 @@ a{
 .read-more:hover{
     box-shadow: 4px 4px 40px #181a1b;
     color: white;
+    transform: scale(1.2);
+}
 
+.half-width img:hover{
+    transform: scale(1.2);
 }
 
 .try-now{
@@ -229,6 +255,8 @@ a{
 
 .btns{
     display: flex;
+    margin-left: 5%;
+
 }
 
 
@@ -624,9 +652,9 @@ div#features {
     .half-width h1{
         font-size: 20px;
     }
-    /*.half-width img{
+    .half-width img{
         display: none;
-    }*/
+    }
     .main-content {
         text-align: center;
         background: #1c1c2f;
